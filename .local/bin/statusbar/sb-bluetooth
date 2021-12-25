@@ -1,0 +1,17 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+	1) setsid -f "$TERMINAL" -e "blueman-manager" ;;
+	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+esac
+
+
+if bluetoothctl -- show | grep -q "Powered: No"; then
+  printf "BT OF" && exit
+fi
+
+if bluetoothctl -- info | grep -q "Missing"; then
+  printf "BT ON"
+else
+  printf "BT CO"
+fi

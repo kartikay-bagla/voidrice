@@ -1,3 +1,15 @@
 [submodule ".config/mpv/script_modules/mpvSockets"]
 	path = .config/mpv/script_modules/mpvSockets
 	url = https://github.com/wis/mpvSockets.git
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = https://github.com/Samyak2/nvim-config
+[submodule "suckless/st"]
+	path = suckless/st
+	url = git@github.com:kartikay-bagla/st.git
+[submodule "suckless/dmenu"]
+	path = suckless/dmenu
+	url = git@github.com:kartikay-bagla/dmenu.git
+[submodule "suckless/dwm"]
+	path = suckless/dwm
+	url = git@github.com:kartikay-bagla/dwm.git
